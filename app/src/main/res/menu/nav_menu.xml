@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_massage"
+        android:icon="@drawable/massage"
+        android:title="@string/massage_nav" />
+    <item
+        android:id="@+id/nav_reminders"
+        android:icon="@drawable/reminder"
+        android:title="@string/nav_reminders" />
+    <item
+        android:id="@+id/nav_facts"
+        android:icon="@drawable/factss"
+        android:title="@string/nav_facts" />
+</menu>
