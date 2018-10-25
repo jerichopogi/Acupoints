@@ -55,6 +55,8 @@ public class MainActivity extends AppCompatActivity{
 
         mainGrid = (GridLayout)findViewById(R.id.main_grid);
 
+        setSingleEvent(mainGrid);
+
         mainNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -77,6 +79,19 @@ public class MainActivity extends AppCompatActivity{
                 }
             }
         });
+    }
+
+    private void setSingleEvent(GridLayout mainGrid) {
+        for(int i = 0; i<mainGrid.getChildCount();i++){
+            CardView cardView = (CardView)mainGrid.getChildAt(i);
+            final int finalI = i;
+            cardView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(MainActivity.this, "At index number "+ finalI, Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
     }
 
     private void initFragment(Fragment fragment) {

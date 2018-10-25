@@ -31,7 +31,7 @@
         </RelativeLayout>
 
         <android.support.v7.widget.GridLayout
-            android:id="@+id/main_grid"
+            android:id="@+id/mainGrid"
             android:layout_width="match_parent"
             android:layout_height="615dp"
             android:layout_weight="8"
