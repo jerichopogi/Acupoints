@@ -28,8 +28,9 @@
         <activity android:name=".ColdsActivity" />
         <activity android:name=".InsomniaActivity" />
         <activity android:name=".NauseaActivity" />
-        <activity android:name=".ConstipationActivity" />
-        <activity android:name=".HypertensionActivity"></activity>
+        <activity android:name=".HypertensionActivity" />
+        <activity android:name=".StressActivity" />
+        <activity android:name=".MensCrampsActivity"></activity>
     </application>
 
 </manifest>

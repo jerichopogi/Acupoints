@@ -1,7 +1,6 @@
 package com.devs.jeric.acupoints;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
@@ -9,7 +8,8 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
-import android.support.v7.widget.GridLayout;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -17,7 +17,8 @@ import android.widget.FrameLayout;
 import android.widget.Toast;
 import android.widget.VideoView;
 
-import java.net.URI;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity{
     Button clk;
@@ -30,9 +31,7 @@ public class MainActivity extends AppCompatActivity{
     private RemindersFragment remindersFragment;
     private FactsFragment factsFragment;
 
-    private CardView headacheCard;
-
-    GridLayout mainGrid;
+    List<Symptoms> symptomsList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,9 +52,20 @@ public class MainActivity extends AppCompatActivity{
 
         initFragment(massageFragment);
 
-        mainGrid = (GridLayout)findViewById(R.id.main_grid);
+        symptomsList = new ArrayList<>();
+        symptomsList.add(new Symptoms("Headache", R.drawable.headache_icon));
+        symptomsList.add(new Symptoms("Stomachache", R.drawable.stomachache_icon));
+        symptomsList.add(new Symptoms("Colds", R.drawable.colds_icon));
+        symptomsList.add(new Symptoms("Insomnia", R.drawable.insomnia_icon));
+        symptomsList.add(new Symptoms("Nausea", R.drawable.nausea_icon));
+        symptomsList.add(new Symptoms("Stress/Anxiety", R.drawable.stress_icon));
+        symptomsList.add(new Symptoms("Hypertension", R.drawable.hypertension_icon));
+        symptomsList.add(new Symptoms("Menstrual Cramps", R.drawable.menstrualcramps_icon));
 
-        setSingleEvent(mainGrid);
+        RecyclerView rv = (RecyclerView)findViewById(R.id.main_recycler_view);
+        RecyclerViewAdapter ad = new RecyclerViewAdapter(this, symptomsList);
+        rv.setLayoutManager(new GridLayoutManager(this, 2));
+        rv.setAdapter(ad);
 
         mainNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -79,19 +89,6 @@ public class MainActivity extends AppCompatActivity{
                 }
             }
         });
-    }
-
-    private void setSingleEvent(GridLayout mainGrid) {
-        for(int i = 0; i<mainGrid.getChildCount();i++){
-            CardView cardView = (CardView)mainGrid.getChildAt(i);
-            final int finalI = i;
-            cardView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Toast.makeText(MainActivity.this, "At index number "+ finalI, Toast.LENGTH_SHORT).show();
-                }
-            });
-        }
     }
 
     private void initFragment(Fragment fragment) {
