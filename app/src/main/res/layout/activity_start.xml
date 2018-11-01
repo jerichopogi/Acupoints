@@ -24,6 +24,7 @@
         android:src="@drawable/logofinal" />
 
     <Button
+        android:foreground="?android:attr/selectableItemBackground"
         android:id="@+id/startbtn"
         android:layout_width="160dp"
         android:layout_height="60dp"

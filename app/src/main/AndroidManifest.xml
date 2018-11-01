@@ -23,13 +23,13 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".HeadAcheActivity" />
-        <activity android:name=".StomachAcheActivity" />
+        <activity android:name=".Stomachache_Activity" />
+        <activity android:name=".Headache_Activity" />
         <activity android:name=".ColdsActivity" />
         <activity android:name=".InsomniaActivity" />
         <activity android:name=".NauseaActivity" />
-        <activity android:name=".HypertensionActivity" />
         <activity android:name=".StressActivity" />
+        <activity android:name=".HypertensionActivity" />
         <activity android:name=".MensCrampsActivity"></activity>
     </application>
 

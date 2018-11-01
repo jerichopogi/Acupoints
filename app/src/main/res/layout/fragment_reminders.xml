@@ -7,13 +7,15 @@
 
     <!-- TODO: Update blank fragment layout -->
     <Button
-        android:onClick="videoplay"
+        android:elevation="10dp"
+        android:background="@color/colorWhite"
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="212dp"
+        android:onClick="videoplay"
         android:text="Button"
         tools:ignore="OnClick" />
 

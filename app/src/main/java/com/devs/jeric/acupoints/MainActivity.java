@@ -31,8 +31,6 @@ public class MainActivity extends AppCompatActivity{
     private RemindersFragment remindersFragment;
     private FactsFragment factsFragment;
 
-    List<Symptoms> symptomsList;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,21 +49,6 @@ public class MainActivity extends AppCompatActivity{
         mainFrame = (FrameLayout) findViewById(R.id.main_frame);
 
         initFragment(massageFragment);
-
-        symptomsList = new ArrayList<>();
-        symptomsList.add(new Symptoms("Headache", R.drawable.headache_icon));
-        symptomsList.add(new Symptoms("Stomachache", R.drawable.stomachache_icon));
-        symptomsList.add(new Symptoms("Colds", R.drawable.colds_icon));
-        symptomsList.add(new Symptoms("Insomnia", R.drawable.insomnia_icon));
-        symptomsList.add(new Symptoms("Nausea", R.drawable.nausea_icon));
-        symptomsList.add(new Symptoms("Stress/Anxiety", R.drawable.stress_icon));
-        symptomsList.add(new Symptoms("Hypertension", R.drawable.hypertension_icon));
-        symptomsList.add(new Symptoms("Menstrual Cramps", R.drawable.menstrualcramps_icon));
-
-        RecyclerView rv = (RecyclerView)findViewById(R.id.main_recycler_view);
-        RecyclerViewAdapter ad = new RecyclerViewAdapter(this, symptomsList);
-        rv.setLayoutManager(new GridLayoutManager(this, 2));
-        rv.setAdapter(ad);
 
         mainNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
