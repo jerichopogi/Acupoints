@@ -4,36 +4,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/startbg"
     tools:context=".MassageFragment">
 
         <LinearLayout
             android:orientation="vertical"
-            android:background="@drawable/mainbg"
             android:weightSum="10"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="93dp"
+                android:layout_height="146dp"
                 android:layout_weight="1.5">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:fontFamily="cursive"
+                    android:fontFamily="@font/montserrat_alternates"
                     android:text="What do you feel?"
                     android:textAlignment="center"
                     android:textAllCaps="false"
-                    android:textColor="@android:color/white"
-                    android:textSize="45sp"
-                    android:textStyle="bold" />
+                    android:textColor="@color/colorWhite"
+                    android:textSize="36sp" />
+
             </RelativeLayout>
 
             <android.support.v7.widget.GridLayout
                 android:layout_width="match_parent"
-                android:layout_height="557dp"
+                android:layout_height="650dp"
                 android:layout_weight="8"
                 android:padding="7dp"
                 app:alignmentMode="alignMargins"
@@ -44,306 +44,373 @@
                 <!-- Row 1 -->
                 <!-- Column 1 -->
                 <android.support.v7.widget.CardView
-                    android:clickable="true"
                     android:id="@+id/headachebutton"
                     android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="15dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    app:cardBackgroundColor="@android:color/white"
-                    app:cardCornerRadius="1dp"
-                    app:cardElevation="5dp"
-                    app:layout_columnWeight="1"
+                    android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="1dp"
+                    app:cardElevation="10dp"
+                    app:layout_columnWeight="1"
                     app:layout_rowWeight="1">
 
-                    <android.support.constraint.ConstraintLayout
-                        android:layout_width="120dp"
-                        android:layout_height="112dp"
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal|center_vertical"
                         android:layout_margin="7dp"
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/headachetext"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="8dp"
-                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/montserrat"
                             android:text="Headache"
                             android:textAlignment="center"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent" />
-                    </android.support.constraint.ConstraintLayout>
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/headacheicon" />
+                    </RelativeLayout>
                 </android.support.v7.widget.CardView>
                 <!-- Column 2 -->
                 <android.support.v7.widget.CardView
                     android:id="@+id/stomachachebutton"
-                    android:foreground="?android:attr/selectableItemBackground"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="15dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    app:cardBackgroundColor="@android:color/white"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="1dp"
-                    app:cardElevation="5dp"
+                    app:cardElevation="10dp"
                     app:layout_columnWeight="1"
                     app:layout_rowWeight="1">
 
-                    <android.support.constraint.ConstraintLayout
-                        android:layout_width="120dp"
-                        android:layout_height="112dp"
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal|center_vertical"
                         android:layout_margin="7dp"
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/stomachachetext"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="8dp"
-                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/montserrat"
                             android:text="Stomachache"
                             android:textAlignment="center"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent" />
-                    </android.support.constraint.ConstraintLayout>
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/stomachacheicon" />
+                    </RelativeLayout>
                 </android.support.v7.widget.CardView>
 
                 <!-- Row 1 -->
                 <!-- Column 1 -->
                 <android.support.v7.widget.CardView
                     android:id="@+id/coldsbutton"
-                    android:foreground="?android:attr/selectableItemBackground"
                     android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="15dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    app:cardBackgroundColor="@android:color/white"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="1dp"
-                    app:cardElevation="5dp"
+                    app:cardElevation="10dp"
                     app:layout_columnWeight="1"
                     app:layout_rowWeight="1">
 
-                    <android.support.constraint.ConstraintLayout
-                        android:layout_width="120dp"
-                        android:layout_height="112dp"
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal|center_vertical"
                         android:layout_margin="7dp"
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/coldstext"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="8dp"
-                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/montserrat"
                             android:text="Colds"
                             android:textAlignment="center"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent" />
-                    </android.support.constraint.ConstraintLayout>
+
+                        <ImageView
+                            android:layout_width="68dp"
+                            android:layout_height="80dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/coldsicon" />
+                    </RelativeLayout>
                 </android.support.v7.widget.CardView>
                 <!-- Column 2 -->
                 <android.support.v7.widget.CardView
-                    android:foreground="?android:attr/selectableItemBackground"
                     android:id="@+id/insomniabutton"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="15dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    app:cardBackgroundColor="@android:color/white"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="1dp"
-                    app:cardElevation="5dp"
+                    app:cardElevation="10dp"
                     app:layout_columnWeight="1"
                     app:layout_rowWeight="1">
 
-                    <android.support.constraint.ConstraintLayout
-                        android:layout_width="120dp"
-                        android:layout_height="112dp"
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal|center_vertical"
                         android:layout_margin="7dp"
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/insomniatext"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="8dp"
-                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/montserrat"
                             android:text="Insomnia"
                             android:textAlignment="center"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent" />
-                    </android.support.constraint.ConstraintLayout>
+
+                        <ImageView
+                            android:layout_width="76dp"
+                            android:layout_height="81dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/insomniaicon" />
+                    </RelativeLayout>
                 </android.support.v7.widget.CardView>
 
                 <!-- Row 1 -->
                 <!-- Column 1 -->
                 <android.support.v7.widget.CardView
                     android:id="@+id/nauseabutton"
-                    android:foreground="?android:attr/selectableItemBackground"
                     android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="15dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    app:cardBackgroundColor="@android:color/white"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="1dp"
-                    app:cardElevation="5dp"
+                    app:cardElevation="10dp"
                     app:layout_columnWeight="1"
                     app:layout_rowWeight="1">
 
-                    <android.support.constraint.ConstraintLayout
-                        android:layout_width="120dp"
-                        android:layout_height="112dp"
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal|center_vertical"
                         android:layout_margin="7dp"
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/nauseatext"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="8dp"
-                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/montserrat"
                             android:text="Nausea"
                             android:textAlignment="center"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent" />
-                    </android.support.constraint.ConstraintLayout>
+
+                        <ImageView
+                            android:layout_width="79dp"
+                            android:layout_height="66dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="21dp"
+                            android:src="@drawable/nauseaicon" />
+                    </RelativeLayout>
                 </android.support.v7.widget.CardView>
                 <!-- Column 2 -->
                 <android.support.v7.widget.CardView
                     android:id="@+id/stressbutton"
-                    android:foreground="?android:attr/selectableItemBackground"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="15dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    app:cardBackgroundColor="@android:color/white"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="1dp"
-                    app:cardElevation="5dp"
+                    app:cardElevation="10dp"
                     app:layout_columnWeight="1"
                     app:layout_rowWeight="1">
 
-                    <android.support.constraint.ConstraintLayout
-                        android:layout_width="120dp"
-                        android:layout_height="112dp"
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal|center_vertical"
                         android:layout_margin="7dp"
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/stresstext"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="8dp"
-                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/montserrat"
                             android:text="Stress/Anxiety"
                             android:textAlignment="center"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent" />
-                    </android.support.constraint.ConstraintLayout>
+
+                        <ImageView
+                            android:layout_width="69dp"
+                            android:layout_height="66dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="21dp"
+                            android:src="@drawable/stressicon" />
+                    </RelativeLayout>
                 </android.support.v7.widget.CardView>
 
                 <!-- Row 1 -->
                 <!-- Column 1 -->
                 <android.support.v7.widget.CardView
                     android:id="@+id/hypertensionbutton"
-                    android:foreground="?android:attr/selectableItemBackground"
                     android:layout_width="0dp"
-                    android:layout_height="50dp"
+                    android:layout_height="80dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    app:cardBackgroundColor="@android:color/white"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="1dp"
-                    app:cardElevation="5dp"
+                    app:cardElevation="10dp"
                     app:layout_columnWeight="1"
                     app:layout_rowWeight="1">
 
-                    <android.support.constraint.ConstraintLayout
-                        android:layout_width="120dp"
-                        android:layout_height="112dp"
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal|center_vertical"
                         android:layout_margin="7dp"
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/hypertensiontext"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="8dp"
-                            android:fontFamily="@font/open_sans_semibold"
-                            android:text="Hypertension"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Stress/Hypertension"
                             android:textAlignment="center"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent" />
-                    </android.support.constraint.ConstraintLayout>
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="129dp"
+                            android:layout_above="@+id/hypertensiontext"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/hypertensionicon" />
+                    </RelativeLayout>
                 </android.support.v7.widget.CardView>
                 <!-- Column 2 -->
                 <android.support.v7.widget.CardView
                     android:id="@+id/menscrampsbutton"
-                    android:foreground="?android:attr/selectableItemBackground"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    app:cardBackgroundColor="@android:color/white"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="1dp"
-                    app:cardElevation="5dp"
+                    app:cardElevation="10dp"
                     app:layout_columnWeight="1"
                     app:layout_rowWeight="1">
 
-                    <android.support.constraint.ConstraintLayout
-                        android:layout_width="120dp"
-                        android:layout_height="112dp"
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal|center_vertical"
                         android:layout_margin="7dp"
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/menscrampstext"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="8dp"
-                            android:fontFamily="@font/open_sans_semibold"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/montserrat"
                             android:text="Menstrual Cramps"
                             android:textAlignment="center"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent" />
-                    </android.support.constraint.ConstraintLayout>
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="75dp"
+                            android:layout_above="@+id/menscrampstext"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/mensicon" />
+                    </RelativeLayout>
                 </android.support.v7.widget.CardView>
 
             </android.support.v7.widget.GridLayout>

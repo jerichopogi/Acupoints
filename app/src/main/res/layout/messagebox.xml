@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/open_sans"
+        android:text="References"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/ref1"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/open_sans"
+        android:text="Ilza Veith, trans., The Yellow Emperor's Classic of Internal Medicine (Berkeley: University of California Press, 1949). An ancient Chinese medical text"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@id/ref2"
+        android:layout_width="275dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ref1"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/open_sans"
+        android:text="Dr. Stephen Thomas Chang, The Complete Book of Acupuncture (Berkeley: Celestial Arts, 1976), 14."
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/ref3"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/ref2"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/open_sans"
+        android:text="Agnes G. Casbadillo
+ Licensed Massage Therapist
+License no. 06-01-1964
+VIBES Massage"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@id/ref4"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ref3"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/open_sans"
+        android:text="Michael Cabalsa Chavez
+Licensed Massage Therapist
+License no. 12-14-9718
+VIBES Massage"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/buttonok"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ref4"
+        android:layout_centerHorizontal="true"
+        android:text="OK" />
+
+</RelativeLayout>

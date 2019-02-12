@@ -12,4 +12,150 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_test">TestActivity</string>
     <string name="title_activity_headache_">Headache_Activity</string>
+
+    <string name="headache_steps">
+        This point is located between the base of thumb or and index finger. Applying pressure in this point relieves
+        headaches. To do this, using your thumb and index finger, find the base between your thumb and index finger, Press down
+        this point or massage in circular motion for 5 minutes.
+    </string>
+
+    <string name="stomachache_steps">
+        This point is used to help relieve upset stomach. This pressure point also helps relieves nausea, motion sickness, and also
+        headaches. P6 is located 3 fingers below the wrist on the inner forearm in between 2 tendons. Apply a firm downward pressure
+        between 2 tendons for 4 to 5 seconds
+    </string>
+
+    <string name="colds_steps1">
+        This point is recommended to help relieve colds, this point also relieves headaches, eye blurriness or fatigue. GB20 is located
+        on the tender area halfway between the spine and the skull. Apply a firm pressure on the area towards the skull for 15 seconds.
+    </string>
+
+    <string name="colds_steps2">
+        This point also relives colds, loss of taste, allergies or any sinus issues. This point is located in the tender spot between
+        the cheeks and the nose. Apply a gentle pressure or massage the point in circular motion for 15 seconds.
+    </string>
+
+    <string name="colds_steps3">
+        This point also relieves colds and other stomach issues. It is located 4 fingers below the knee and outer side of the tibia or
+        the bone in your leg. Apply a firm pressure to the point or massage the point in circular motion for 15 seconds.
+    </string>
+
+    <string name="insomnia_steps1">
+        Applying pressure to this point is  with quieting your mind which can help you fall asleep. It is located in the wrist wrinkles of
+        your hand. It is alligned to the bone of your pinkie finger. Apply a gentle pressure to the point. Breathe in and breathe out for 1 minute.
+    </string>
+
+    <string name="insomnia_steps2">
+        This point is one of the best acupressure point for sleep treatment. It also calms the mind and relieves anxiety. This point is located between
+        your eyebrows. Apply a firm pressure and breathe deeply.
+    </string>
+
+    <string name="nausea_steps1">
+        This point is used to relieve nausea, it is also helps relieves stomachaches and other stomach or intestinal pain. It is located 3 fingers
+        below the wrist in the inner forearm in between 2 tendons. Apply a firm pressure between the 2 tendons for 4 to 5 seconds.
+    </string>
+
+    <string name="nausea_steps2">
+        This point helps to relieve a sudden urge to vomit. It is located at the outside edge of your ring finger. Press the point until your nausea
+        is gone.
+    </string>
+
+    <string name="stress1">
+        This point is related to emotional issues especially those with related to sleep and thinking manifestations. HT-7 helps to relieves stress and anxiety.
+        THis point is located in the wrist wrinkles of your hand. Apply a generous amount of pressure to relieve stress.
+    </string>
+
+    <string name="stress2">
+        This point is used for calming anxiety and also used for emotional healing. CV-17 is located in the center of the chest. Apply a gentle pressure
+        or used 3 fingers for applying pressure for 3 minutes.
+    </string>
+
+    <string name="hypertension">
+        This point is commonly used for stress, lower back pain. highblood pressure and menstrual cramps. LV-3 is located on your foot between the
+        big toe and the next toe joint. To do this, apply deep and firm pressure and stimulate the area for 4 to 5 seconds.
+    </string>
+
+    <string name="mens1">
+        This point is perfect for relieving period cramps and regulating menstruation. This point is also used for backpain and hypertension. It is located
+        on your foot between the big toe and the next toe joint. Apply deep and firm pressure for 4 to 5 seconds.
+    </string>
+
+    <string name="mens2">
+        Bl-26 is one of the most helpful point for period cramp relief. It is inline with your bladder. BL-26 is located about 4 finger-widths
+        directly below the belly button. Applying pressure with the index finger and heat to this point can bring immense relief.
+    </string>
+
+    <string name="reminders">
+        Apply finger pressure in a slow, rhythmic manner to enable the layers of tissue and the internal organs to respond. Never press any area in an abrupt, forceful, or jarring way.
+        Use the abdominal points cautiously, especially if you are ill. Avoid the abdominal area entirely if you have a life-threatening disease, especially intestinal cancer, tuberculosis, serious cardiac conditions, and leukemia. Avoid the abdominal area during pregnancy as well. \n \n
+    </string>
+
+    <string name="reminders2">
+        Pregnancy - special care should be taken during pregnancy.
+    </string>
+
+    <string name="reminders3">
+        Lymph areas, such as the groin, the area of the throat just below the ears, and the outer breast near the armpits, are very sensitive These areas should be touched only lightly and not pressed.
+    </string>
+
+    <string name="reminders4">
+        Burns and infections: Do not work directly on a serious burn, an ulcerous condition, or an infection: for these conditions, medical care alone is indicated.
+    </string>
+
+    <string name="reminders5">
+        Scars and injuries: Do not work directly on a recently formed scar. During the first month after an injury or operation, do not apply pressure directly on the affected site. However, gentle continuous holding a few inches away from the periphery of the injury will stimulate the area and help it heal. \n \n
+    </string>
+
+    <string name="reminders6">
+        After an acupressure session, your body heat is lowered; thus your resistance to cold is also lower. Because the tensions have been released, your body\'s
+        vital energies are concentrating inward to maximize healing. Your body will be more vulnerable, so be sure to wear extra clothing and keep warm when you finish an acupressure routine.
+    </string>
+
+    <string name="facts1">
+        Wearing jewellery is also acupressure.The places that people wear jewelry often closely relate to pressure points, that
+        when stimulated, helps keep the body in sync. For instance, in many Indian cultures, women wear
+        nose pins or toe rings; these points are associated with fertility and are supposed to ensure the proper functioning of the uterus.
+    </string>
+
+    <string name="facts2">
+        Acupressure treats the mind, emotions, and spirit.
+    </string>
+
+    <string name="facts3">
+        Acupressure and acupuncture use the same pressure points and meridians. The only major difference is that one uses pressure while the other uses needles.
+    </string>
+
+    <string name="facts4">
+        Acupressure decreases wrinkles by improving muscle tone and improving circulation.
+    </string>
+
+    <string name="facts5">
+        If you press the pressure points on either your hands or feet and find one that is particularly painful,
+        it is a clear indication that the associated organ has a problem.
+    </string>
+
+    <string name="facts6">
+        According to the principles of acupressure, the human body has over 200 pressure points, but most practitioners believe that the hand and the feet are
+        the parts that should be concentrated on.
+    </string>
+
+    <string name="facts7">
+         According to Chinese acupressure, there is a point on the head that you can press to control your appetite. It is located in
+        the hollow just in front of the flap of the ear.
+    </string>
+
+    <string name="facts8">
+         The Acupressure method Meridian was invented in China. Meridian Method says that human body functions with bio-energy Circulation. That means there is a system of flow of energy in
+        human body rather than blood circulation system.
+    </string>
+
+    <string name="facts9">
+         Acupressure is the only therapy, through which you can treat almost all the existing diseases in a natural way.
+    </string>
+
+    <string name="facts10">
+        The Chinese have practiced acupressure and acupuncture for over 5,000 years as a way of keeping themselves well and happy.
+
+    </string>
+
 </resources>

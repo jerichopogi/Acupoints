@@ -4,33 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/startbgfinal"
     tools:context=".StartActivity">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/startbgfinal"
-        android:contentDescription="@string/startbg" />
-
-    <ImageView
-        android:layout_width="215dp"
-        android:layout_height="225dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="69dp"
-        android:contentDescription="@string/startlogo"
-        android:src="@drawable/logofinal" />
-
     <Button
-        android:foreground="?android:attr/selectableItemBackground"
-        android:id="@+id/startbtn"
-        android:layout_width="160dp"
-        android:layout_height="60dp"
+        android:id="@+id/nextbtn"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/montserrat"
+        android:text="skip"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="69dp"
-        android:background="@drawable/startbtnfinal" />
+        android:layout_marginTop="38dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="What is Acupressure?"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        android:typeface="normal" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/slideViewpager"
+        android:layout_width="match_parent"
+        android:layout_height="442dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="46dp">
+
+        <Button
+            android:id="@+id/skipbtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/montserrat"
+            android:text="skip"
+            android:textColor="@android:color/background_light" />
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/dotLayout"
+        android:layout_width="39dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/nextbtn"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"></LinearLayout>
 
 </RelativeLayout>

@@ -20,6 +20,8 @@ import android.widget.VideoView;
 import java.util.ArrayList;
 import java.util.List;
 
+import me.anwarshahriar.calligrapher.Calligrapher;
+
 public class MainActivity extends AppCompatActivity{
     Button clk;
     VideoView vid;
@@ -35,9 +37,6 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        clk = (Button) findViewById(R.id.button);
-        vid = (VideoView) findViewById(R.id.videoView);
 
         mainFrame = (FrameLayout) findViewById(R.id.main_frame);
         mainNav = (BottomNavigationView) findViewById(R.id.main_nav);
