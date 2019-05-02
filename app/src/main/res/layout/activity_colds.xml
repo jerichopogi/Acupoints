@@ -16,12 +16,10 @@
             android:layout_width="match_parent"
             android:layout_height="230dp"
             android:id="@+id/videoViewcolds"/>
+
     </RelativeLayout>
 
     <FrameLayout
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
         android:layout_below="@id/coldsview"
         android:background="@color/colorWhite"
         android:layout_width="match_parent"
@@ -31,63 +29,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <RelativeLayout
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="1300dp">
-
-                <Button
-                    android:id="@+id/playcolds"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="20dp"
-                    android:text="Play" />
+                android:layout_height="match_parent">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="80dp"
+                    android:layout_marginTop="50dp"
                     android:fontFamily="@font/montserrat_alternates"
                     android:text="GB-20/Gallbladder 20"
                     android:textAlignment="center"
                     android:textSize="28sp"
                     android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="300dp"
-                    android:layout_height="200dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="300dp"
-                    android:fontFamily="@font/montserrat"
-                    android:text="@string/colds_steps1"
-                    android:textAlignment="center"
-                    android:textSize="15.5sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="500dp"
-                    android:fontFamily="@font/montserrat_alternates"
-                    android:text="LI-20/Large Intestine 20"
-                    android:textAlignment="center"
-                    android:textSize="28sp" />
-
-                <TextView
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="720dp"
-                    android:fontFamily="@font/montserrat"
-                    android:text="@string/colds_steps2"
-                    android:textAlignment="center"
-                    android:textSize="15.5sp" />
 
                 <ImageView
                     android:id="@+id/imageView3"
@@ -95,8 +50,33 @@
                     android:layout_height="120dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="156dp"
+                    android:layout_marginTop="50dp"
                     app:srcCompat="@drawable/gb20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="24dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/colds_steps1"
+                    android:textAlignment="textStart"
+                    android:textSize="15.5sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/montserrat_alternates"
+                    android:text="LI-20/Large Intestine 20"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="28sp" />
 
                 <ImageView
                     android:id="@+id/imageView4"
@@ -104,14 +84,27 @@
                     android:layout_height="120dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginTop="580dp"
+                    android:layout_marginTop="50dp"
                     app:srcCompat="@drawable/li20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="24dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/colds_steps2"
+                    android:textAlignment="viewStart"
+                    android:textSize="15.5sp" />
 
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="900dp"
+                    android:layout_marginTop="50dp"
                     android:fontFamily="@font/montserrat_alternates"
                     android:text="ST-36/Stomach 36"
                     android:textAlignment="center"
@@ -123,31 +116,25 @@
                     android:layout_width="wrap_content"
                     android:layout_height="120dp"
                     android:layout_alignParentStart="true"
-                    android:layout_marginTop="970dp"
+                    android:layout_marginTop="50dp"
                     app:srcCompat="@drawable/st36" />
 
                 <TextView
                     android:id="@+id/textView4"
-                    android:layout_width="300dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="1100dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="50dp"
                     android:fontFamily="@font/montserrat"
                     android:text="@string/colds_steps3"
-                    android:textAlignment="center"
+                    android:textAlignment="textStart"
                     android:textSize="15.5sp" />
 
-                <Button
-                    android:id="@+id/pausebtncolds"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_centerHorizontal="true"
-                    android:text="Pause" />
-
-
-            </RelativeLayout>
+            </LinearLayout>
 
         </ScrollView>
     </FrameLayout>

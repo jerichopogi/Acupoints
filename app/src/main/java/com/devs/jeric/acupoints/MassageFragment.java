@@ -12,9 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import me.anwarshahriar.calligrapher.Calligrapher;
-
-
 /**
  * A simple {@link Fragment} subclass.
  */

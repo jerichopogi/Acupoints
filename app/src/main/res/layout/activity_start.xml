@@ -9,10 +9,12 @@
 
     <Button
         android:id="@+id/nextbtn"
-        android:layout_width="65dp"
+        android:layout_width="77dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-2dp"
         android:background="@android:color/transparent"
         android:fontFamily="@font/montserrat"
         android:text="skip"
@@ -49,14 +51,15 @@
             android:fontFamily="@font/montserrat"
             android:text="skip"
             android:textColor="@android:color/background_light" />
+
     </android.support.v4.view.ViewPager>
 
     <LinearLayout
         android:id="@+id/dotLayout"
-        android:layout_width="39dp"
-        android:layout_height="35dp"
-        android:layout_alignTop="@+id/nextbtn"
+        android:layout_width="36dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:orientation="vertical"></LinearLayout>
+        android:orientation="horizontal"></LinearLayout>
 
 </RelativeLayout>

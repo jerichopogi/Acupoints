@@ -1,54 +1,69 @@
 package com.devs.jeric.acupoints;
 
+import android.content.Context;
 import android.net.Uri;
+import android.os.PowerManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
-import me.anwarshahriar.calligrapher.Calligrapher;
 
 public class InsomniaActivity extends AppCompatActivity {
+
+    private VideoView videoView;
+    private MediaController mediaController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insomnia);
 
-        final VideoView videoView = findViewById(R.id.videoViewinsomnia);
-        String videopath = "android.resource://" +getPackageName() + "/" + R.raw.insomniaanimation;
-        Uri uri = Uri.parse(videopath);
-        videoView.setVideoURI(uri);
+        getSupportActionBar().setTitle("");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        videoView = findViewById(R.id.videoViewinsomnia);
+        String fullScreen = getIntent().getStringExtra("fullScreenInd");
+        if ("y".equals(fullScreen)) {
+            getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                    WindowManager.LayoutParams.FLAG_FULLSCREEN);
+            getSupportActionBar().hide();
+        }
+
+        Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.insomniaanimation);
+
+        videoView.setVideoURI(videoUri);
         videoView.seekTo(1000);
 
-        MediaController mediaController = new MediaController(this);
-        videoView.setMediaController(mediaController);
+        mediaController = new FullScreenInsomnia(this);
         mediaController.setAnchorView(videoView);
 
-        final Button button = (Button)findViewById(R.id.playinsomnia);
-        final Button pausebtn = (Button)findViewById(R.id.pausebtninsomnia);
+        videoView.setMediaController(mediaController);
+    }
 
-        button.setVisibility(View.VISIBLE);
-        pausebtn.setVisibility(View.GONE);
+    @Override
+    public void onPause()
+    {
+        super.onPause();
+        PowerManager mPowerManager = (PowerManager) getSystemService(Context.POWER_SERVICE);
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                button.setVisibility(View.GONE);
-                pausebtn.setVisibility(View.VISIBLE);
-                videoView.start();
-            }
-        });
-
-        pausebtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                pausebtn.setVisibility(View.GONE);
-                button.setVisibility(View.VISIBLE);
+        if (!mPowerManager.isScreenOn())
+            if (videoView!= null && videoView.isPlaying())
                 videoView.pause();
-            }
-        });
+    }
+
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+
+        PowerManager mPowerManager = (PowerManager) getSystemService(Context.POWER_SERVICE);
+
+        if (mPowerManager.isScreenOn())
+        {
+            videoView.resume();
+        }
     }
 }

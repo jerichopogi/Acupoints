@@ -19,9 +19,6 @@
     </RelativeLayout>
 
     <FrameLayout
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
         android:layout_below="@id/insomniaview"
         android:background="@color/colorWhite"
         android:layout_width="match_parent"
@@ -31,87 +28,79 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <RelativeLayout
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="870dp">
-
-                <Button
-                    android:id="@+id/playinsomnia"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="20dp"
-                    android:text="Play" />
+                android:layout_height="match_parent">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginTop="80dp"
+                    android:layout_marginTop="50dp"
                     android:fontFamily="@font/montserrat_alternates"
                     android:text="HT-7/Heart 7"
                     android:textAlignment="center"
-                    android:textSize="28sp" />
-
-                <TextView
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="300dp"
-                    android:fontFamily="@font/montserrat"
-                    android:text="@string/insomnia_steps1"
-                    android:textAlignment="center"
-                    android:textSize="15.5sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="500dp"
-                    android:fontFamily="@font/montserrat_alternates"
-                    android:text="GB-24/Gallbladder 24"
-                    android:textSize="28sp" />
-
-                <TextView
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="710dp"
-                    android:fontFamily="@font/montserrat"
-                    android:text="@string/insomnia_steps2"
-                    android:textAlignment="center"
-                    android:textSize="15.5sp" />
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
 
                 <ImageView
                     android:id="@+id/imageView6"
                     android:layout_width="wrap_content"
-                    android:layout_height="120dp"
+                    android:layout_height="116dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginTop="149dp"
+                    android:layout_marginTop="50dp"
                     app:srcCompat="@drawable/ht7" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="24dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/insomnia_steps1"
+                    android:textAlignment="textStart"
+                    android:textSize="15.5sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/montserrat_alternates"
+                    android:text="GB-24/Gallbladder 24"
+                    android:textAlignment="center"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
 
                 <ImageView
                     android:id="@+id/imageView7"
                     android:layout_width="wrap_content"
                     android:layout_height="120dp"
-                    android:layout_marginTop="570dp"
+                    android:layout_marginTop="50dp"
                     app:srcCompat="@drawable/gb24" />
 
-                <Button
-                    android:id="@+id/pausebtninsomnia"
-                    android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:text="Pause" />
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="50dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/insomnia_steps2"
+                    android:textAlignment="textStart"
+                    android:textSize="15.5sp" />
 
-            </RelativeLayout>
+            </LinearLayout>
 
         </ScrollView>
     </FrameLayout>

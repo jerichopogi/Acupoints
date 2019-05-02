@@ -19,9 +19,6 @@
     </RelativeLayout>
 
     <FrameLayout
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
         android:layout_below="@id/nauseaview"
         android:background="@color/colorWhite"
         android:layout_width="match_parent"
@@ -31,89 +28,78 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <RelativeLayout
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="800dp">
-
-                <Button
-                    android:id="@+id/playnausea"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="20dp"
-                    android:text="Play" />
+                android:layout_height="match_parent">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginTop="80dp"
+                    android:layout_marginTop="50dp"
                     android:fontFamily="@font/montserrat_alternates"
                     android:text="P-6/Pericardium 6"
                     android:textAlignment="center"
-                    android:textSize="28sp" />
-
-                <TextView
-
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="280dp"
-                    android:fontFamily="@font/montserrat"
-                    android:text="@string/nausea_steps1"
-                    android:textAlignment="center"
-                    android:textSize="15.5sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="465dp"
-                    android:fontFamily="@font/montserrat_alternates"
-                    android:text="TW-1/Triple warmer 1"
                     android:textSize="28sp"
                     android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="680dp"
-                    android:fontFamily="@font/montserrat"
-                    android:text="@string/nausea_steps2"
-                    android:textAlignment="center"
-                    android:textSize="15.5sp" />
 
                 <ImageView
                     android:id="@+id/imageView8"
                     android:layout_width="wrap_content"
                     android:layout_height="120dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="50dp"
+                    app:srcCompat="@drawable/p6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="144dp"
-                    app:srcCompat="@drawable/p6" />
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="24dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/nausea_steps1"
+                    android:textAlignment="textStart"
+                    android:textSize="15.5sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/montserrat_alternates"
+                    android:text="TW-1/Triple warmer 1"
+                    android:textSize="28sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
 
                 <ImageView
                     android:id="@+id/imageView9"
                     android:layout_width="wrap_content"
                     android:layout_height="120dp"
-                    android:layout_marginTop="540dp"
+                    android:layout_marginTop="50dp"
                     app:srcCompat="@drawable/tw1" />
 
-                <Button
-                    android:id="@+id/pausebtnnausea"
-                    android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:text="Pause" />
-
-            </RelativeLayout>
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="50dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/nausea_steps2"
+                    android:textAlignment="textStart"
+                    android:textSize="15.5sp" />
+            </LinearLayout>
         </ScrollView>
     </FrameLayout>
 </RelativeLayout>

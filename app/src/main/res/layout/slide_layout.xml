@@ -5,16 +5,18 @@
 
     <TextView
         android:id="@+id/slideDesc"
-        android:layout_width="290dp"
+        android:layout_width="304dp"
         android:layout_height="195dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="95dp"
+        android:layout_marginLeft="15dp"
         android:fontFamily="@font/montserrat"
         android:text="Acupressure is a specific type of massage that relies primarily on using the thumbs, fingers and palms to apply pressure to various points on the body. Therapists may use various rhythms,
 pressures and techniques in the practice. Shiatsu massage is a style of acupressure therapy."
         android:textAlignment="center"
-        android:textColor="@android:color/background_light" />
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp" />
 
     <ImageView
         android:id="@+id/slideIcon"

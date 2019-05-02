@@ -1,8 +1,13 @@
 package com.devs.jeric.acupoints;
 
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Application;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -20,9 +25,8 @@ import android.widget.VideoView;
 import java.util.ArrayList;
 import java.util.List;
 
-import me.anwarshahriar.calligrapher.Calligrapher;
 
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends AppCompatActivity {
     Button clk;
     VideoView vid;
 
@@ -79,10 +83,26 @@ public class MainActivity extends AppCompatActivity{
         fragmentTransaction.commit();
     }
 
-    //public void videoplay(View v){
-        //String videopath = "android.resource://com.devs.jeric.acupoints/"+R.raw
-        //Uri Uri uri = Uri.parse(videopath);
-        //vid.setVideoURI(uri);
-        //vid.start();
-    //}
+    @Override
+    public void onBackPressed(){
+        final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+        builder.setMessage("Are you sure you want to exit?");
+        builder.setCancelable(true);
+        builder.setNegativeButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finish();
+                ActivityCompat.finishAffinity(MainActivity.this);
+            }
+        });
+        builder.setPositiveButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+    }
 }

@@ -1,6 +1,8 @@
 package com.devs.jeric.acupoints;
 
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -16,6 +18,7 @@ import android.widget.ViewFlipper;
 public class FactsFragment extends Fragment {
     private ViewFlipper viewFlipper;
     Button Next, Previous,btn;
+    Button reference;
 
     public FactsFragment() {
         // Required empty public constructor
@@ -31,6 +34,7 @@ public class FactsFragment extends Fragment {
         Next = (Button)view.findViewById(R.id.nextbtn);
         Previous = (Button)view.findViewById(R.id.previousbtn);
         viewFlipper = view.findViewById(R.id.viewFlipper);
+        reference = view.findViewById(R.id.references);
 
         Next.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -48,6 +52,17 @@ public class FactsFragment extends Fragment {
             }
         });
 
+        reference.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showReferences();
+            }
+        });
+
         return view;
+    }
+    public void showReferences(){
+        DialogBox dialogBox = new DialogBox();
+        dialogBox.show(getFragmentManager(), "dialog");
     }
 }

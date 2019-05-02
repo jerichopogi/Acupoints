@@ -27,7 +27,7 @@ public class SliderAdapter extends PagerAdapter {
     public String[] slidedecs = {
             "Acupressure is a specific type of massage that relies primarily on using the thumbs, fingers and palms to apply pressure to various points on the body. Therapists may use various rhythms,"+
                     "pressures and techniques in the practice. Shiatsu massage is a style of acupressure therapy.",
-            "Along with its ability to help treat variety of ailments, patients experience additional benefits of acupressure massage. It's a deeply relaxing experience and like other types of massage, +" +
+            "Along with its ability to help treat variety of ailments, patients experience additional benefits of acupressure massage. It's a deeply relaxing experience and like other types of massage, " +
                     " can help with,Relieving stress, tension and anxiety,Improving sleep, Relaxing muscles and joints, Soothing the pain and discomfort of a sports or other injury, Reducing digestive issues" +
                     ", Minimizing headaches, Alleviating chronic pain",
             "Acupressure is a therapy developed over 5,000 years ago as an important aspect of Asian, especially Chinese, medicine. It uses precise finger placement and pressure over specific"+

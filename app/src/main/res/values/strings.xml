@@ -15,14 +15,14 @@
 
     <string name="headache_steps">
         This point is located between the base of thumb or and index finger. Applying pressure in this point relieves
-        headaches. To do this, using your thumb and index finger, find the base between your thumb and index finger, Press down
+        headaches. To do this, using your thumb and index finger, find the base between your thumb and index finger, press down
         this point or massage in circular motion for 5 minutes.
     </string>
 
     <string name="stomachache_steps">
         This point is used to help relieve upset stomach. This pressure point also helps relieves nausea, motion sickness, and also
         headaches. P6 is located 3 fingers below the wrist on the inner forearm in between 2 tendons. Apply a firm downward pressure
-        between 2 tendons for 4 to 5 seconds
+        between 2 tendons for 4 to 5 seconds.
     </string>
 
     <string name="colds_steps1">
@@ -41,8 +41,8 @@
     </string>
 
     <string name="insomnia_steps1">
-        Applying pressure to this point is  with quieting your mind which can help you fall asleep. It is located in the wrist wrinkles of
-        your hand. It is alligned to the bone of your pinkie finger. Apply a gentle pressure to the point. Breathe in and breathe out for 1 minute.
+        Applying pressure to this point can help relax your mind to help you fall asleep easily. It is located in the wrist wrinkles of
+        your hand. It is aligned to the bone of your pinkie finger. Apply a gentle pressure to the point. Breathe in and breathe out for 1 minute.
     </string>
 
     <string name="insomnia_steps2">
@@ -51,7 +51,7 @@
     </string>
 
     <string name="nausea_steps1">
-        This point is used to relieve nausea, it is also helps relieves stomachaches and other stomach or intestinal pain. It is located 3 fingers
+        This point is used to relieve nausea, it also helps relieve stomachaches and other stomach or intestinal pain. It is located 3 fingers
         below the wrist in the inner forearm in between 2 tendons. Apply a firm pressure between the 2 tendons for 4 to 5 seconds.
     </string>
 
@@ -62,21 +62,21 @@
 
     <string name="stress1">
         This point is related to emotional issues especially those with related to sleep and thinking manifestations. HT-7 helps to relieves stress and anxiety.
-        THis point is located in the wrist wrinkles of your hand. Apply a generous amount of pressure to relieve stress.
+        This point is located in the wrist wrinkles of your hand. Apply a generous amount of pressure to relieve stress.
     </string>
 
     <string name="stress2">
         This point is used for calming anxiety and also used for emotional healing. CV-17 is located in the center of the chest. Apply a gentle pressure
-        or used 3 fingers for applying pressure for 3 minutes.
+        or use 3 fingers for applying pressure for 3 minutes.
     </string>
 
     <string name="hypertension">
-        This point is commonly used for stress, lower back pain. highblood pressure and menstrual cramps. LV-3 is located on your foot between the
+        This point is commonly used for stress, lower back pain. high blood pressure and menstrual cramps. LV-3 is located on your foot between the
         big toe and the next toe joint. To do this, apply deep and firm pressure and stimulate the area for 4 to 5 seconds.
     </string>
 
     <string name="mens1">
-        This point is perfect for relieving period cramps and regulating menstruation. This point is also used for backpain and hypertension. It is located
+        This point is perfect for relieving period cramps and regulating menstruation. This point is also used for back pain and hypertension. It is located
         on your foot between the big toe and the next toe joint. Apply deep and firm pressure for 4 to 5 seconds.
     </string>
 
@@ -91,11 +91,11 @@
     </string>
 
     <string name="reminders2">
-        Pregnancy - special care should be taken during pregnancy.
+        Special care should be taken during pregnancy. Pressure points (medial malleolus) near ankle must be avoided because it can lead to contraction of pelvic muscle and uterus; it is located at width of three fingers above the ankle bone.
     </string>
 
     <string name="reminders3">
-        Lymph areas, such as the groin, the area of the throat just below the ears, and the outer breast near the armpits, are very sensitive These areas should be touched only lightly and not pressed.
+        Lymph areas, such as the groin, the area of the throat just below the ears, and the outer breast near the armpits, are very sensitive. These areas should be touched only lightly and not pressed.
     </string>
 
     <string name="reminders4">
@@ -112,13 +112,13 @@
     </string>
 
     <string name="facts1">
-        Wearing jewellery is also acupressure.The places that people wear jewelry often closely relate to pressure points, that
+        Wearing jewellery is also acupressure. The places that people wear jewelry often closely relate to pressure points, that
         when stimulated, helps keep the body in sync. For instance, in many Indian cultures, women wear
         nose pins or toe rings; these points are associated with fertility and are supposed to ensure the proper functioning of the uterus.
     </string>
 
     <string name="facts2">
-        Acupressure treats the mind, emotions, and spirit.
+        Acupressure treats the mind, body, and emotions.
     </string>
 
     <string name="facts3">
@@ -155,7 +155,11 @@
 
     <string name="facts10">
         The Chinese have practiced acupressure and acupuncture for over 5,000 years as a way of keeping themselves well and happy.
+    </string>
 
+    <string name="reference">
+        http://www.drbargak.com/ \n
+        https://www.webmd.com/balance/guide/acupressure-points-and-massage-treatment
     </string>
 
 </resources>
