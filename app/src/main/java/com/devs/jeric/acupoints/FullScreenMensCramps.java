@@ -45,7 +45,7 @@ public class FullScreenMensCramps extends MediaController {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(getContext(), MensCrampsActivity.class);
+                Intent intent = new Intent(getContext(), MensCrampsFullScreen.class);
 
                 if ("y".equals(isFullScreen)) {
                     intent.putExtra("fullScreenInd", "");

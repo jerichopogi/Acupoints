@@ -42,7 +42,7 @@ public class FullScreenHypertension extends MediaController {
             fullScreen.setImageResource(R.drawable.fullscreen);
 
         //add listener to image button to handle full screen and exit full screen events
-        fullScreen.setOnClickListener(new OnClickListener() {
+                fullScreen.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
 
